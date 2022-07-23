@@ -17,6 +17,16 @@
           <h2>Generate a Password</h2>
         </div>
         <div class="card-body">
+           <label><input type="checkbox" id="lowercaseBox">Allow lower case</label>
+           <br>
+           <label><input type="checkbox" id="uppercaseBox">Allow uppwer case</label>
+           <br>
+           <label><input type="checkbox" id="numberBox">Allow numbers</label>
+           <br>
+           <label><input type="checkbox" id="specialBox">Allow specials</label>
+           <br>
+           <input type="number" id="quantity" value="8" min="8" max="128" class="slider">
+           length of Password (between 8 and 128)
           <textarea
             readonly
             id="password"
